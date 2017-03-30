@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务五：零基础HTML及CSS编码（二）</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Microsoft Yahei"
+		}
+
+/*头部css部分开始*/
+		.header {
+			width: 100%;
+			height: 60px;
+			background-color: #333333;
+		}
+		.inner_h {
+			width: 1240px;
+			height: 60px;
+			margin: 0 auto;
+		}
+		/*logo部分*/
+		.header .inner_h h1 {
+			float: left;
+			width: 122px;
+			height: 60px;
+		}
+		/*导航条部分*/
+		.header .inner_h .nav {
+			float: right;
+			width: 360px;
+			height: 60px;	
+		}
+		.header .inner_h .nav ul li {
+			float: left;
+			width: 90px;
+			line-height: 60px;
+			font-size: 13px;
+
+		}
+		.header .inner_h .nav ul li a {
+			display: block;
+			width: 90px;
+			height: 60px;
+			color: #F4FFF6;
+			text-decoration: none;
+		}
+		.header .inner_h .nav ul .last a {
+			color: #A9AEB4;
+		}
+/*头部css部分结束*/
+
+/*主要内容css开始*/
+	/*背景版心…………*/
+		.content {
+			background-color: #DEDEDE;
+			padding-bottom: 20px;
+		}
+		.inner_c {
+			width: 95%;
+			margin: 0 auto;
+			padding-top: 20px;
+			position: relative;
+		}
+		.inner_left {
+			margin-right: 384px;
+		}
+		
+	/*左边部分内容css*/
+		/*article1*/
+		.inner_left .article1 ,
+		.article2 ,
+		.picture ,
+		.article3   {
+			border: 1px solid #CBCBCB;
+			background-color: #FFFFFF;
+			padding: 27px 20px 34px;
+			box-shadow: 1px 1px 2px;
+		}
+		.inner_left .article1 h2, 
+		.article2 h2 ,
+		.picture h2 ,
+		.article3 h2 {
+			font-size: 22px;
+			line-height: 43px;
+		}
+		.inner_left .article1 h3 ,
+		.article2 h3 , 
+		.article3 h3 {
+			font-size: 16px;
+			line-height: 33px;
+			color: #636466;
+		}
+		.inner_left .article1 p span ,
+		.article2 p span , 
+		.article3 p span {
+			font-size: 12px;
+			line-height: 32px;
+			color: #6F6F6D;
+		}
+		.inner_left .article1 p , 
+		.article2 p {
+			font-size: 14px;
+			line-height: 32px;
+		}
+		.inner_left .article1 .indent1 ,
+		.article2 .indent1 {
+			text-indent: 2em;
+		}
+		.inner_left .article1 img , 
+		.article2 img {
+			margin-top: 16px;
+			margin-bottom: 12px;
+		}
+		/*article2*/
+		.inner_left .article2 {
+			margin-top: 20px;
+		}
+		.article2 img{
+			margin-bottom: 15px;
+		}
+		.inner_left .article2 ul {
+			list-style: none;
+			margin-left: 20px;
+		}
+		.inner_left .article2 ul li {
+			font-size: 16px;
+			line-height: 26px;
+		}
+		/*picture*/
+		.inner_left .picture {
+			margin-top: 20px;
+		}
+		.inner_left .picture ul {
+			width: 90%;
+			list-style: none;
+			margin-left: 40px;
+		}
+		.inner_left .picture ul li {
+			width: 100px;
+			height: 104px;
+			float: left;
+			border: 1px solid #CBCBCB;
+			padding: 10px;
+			font-size: 12px;
+			text-align: center;
+			margin-top: 15px;
+			margin-right: 15px;
+
+		}
+		.inner_left .picture ul li img {
+			width: 100px;
+			height: 80px;
+			margin-top: 8px;
+		}
+		/*article3*/
+		 .inner_left .article3 {
+        	margin-top: 20px;
+        }
+		.inner_left .article3 ol {
+			margin-left: 41px;
+			margin-bottom: 16px;
+		}
+		.inner_left .article3 ol li {
+			font-size: 16px;
+			line-height: 26px;
+		}
+		.inner_left .article3 p {
+			font-size: 14px;
+		}
+		.inner_left .article3 table , th , td {
+			border: 1px solid #CCCCCC;
+
+		}
+		.inner_left .article3 table {
+			width: 100%;
+			height: 146px;
+			border-collapse: collapse;
+		}
+		.inner_left .article3 table th {
+			font-size: 13px;
+			color: #E7F1CF;
+			text-align: left;
+			background-color: #333333;
+			padding-left: 6px;
+		}
+		.inner_left .article3 table td {
+			font-size: 12px;
+			padding-left: 6px;
+		}
+		.inner_left .article3 table tr.last {
+			background-color: #CCCCCC;
+		}
+		.inner_left .article3 table .last td {
+			font-weight: bold;
+		}
+/*右边部分css开始*/
+		.inner_right {
+			width: 362px;
+			position: absolute;
+			top: 20px;
+			right: 0;
+			background-color: blue;
+		}
+
+	/*表单部分css开始*/
+		.inner_right .fm {
+			border: 1px solid #CBCBCB;
+			background-color: #FFFFFF;
+			padding: 21px;
+			box-shadow: 1px 1px 2px;
+		}
+		.inner_right .fm h2 {
+			font-size: 16px;
+			line-height: 38px;
+			border-left: 3px solid #CACACA;
+			padding-left: 10px;
+			margin-bottom: 5px;
+		}
+		.inner_right .fm form {
+			font-size: 12px;
+			line-height: 30px;
+			margin-left: 13px;
+		}
+		.inner_right .fm .fm1 input ,
+		.fm2 input {
+			margin-left: 12px;
+			font-size: 12px;
+			padding-left: 2px;
+			height: 20px;
+			border: 1px solid #CCCCCC;
+		}
+		.inner_right .fm .fm1 p ,
+		.fm2 p {
+			margin-left: 98px;
+			color: #B4B2B3;
+		}
+		.inner_right .fm .fm1 ,
+		.fm2 ,
+		.fm3 {
+			margin-bottom: 10px;
+		}
+		.inner_right .fm .fm2 span {
+			margin-left: 24px;
+		}
+		.fm3 span {
+		 	margin-left: 60px;
+		 	margin-right: 13px;
+		 }
+		 .fm3 .last {
+		 	margin-left: 35px;
+		 }
+        .inner_right .fm .bt {
+        	width: 322px;
+        	height: 38px;
+        	margin: 0 auto;
+        	color: #EAF2FF;
+        	border: none;
+        	background-color: #3355D0;
+        	border-radius: 8px;
+        	
+        }
+
+		.cl {
+			clear: both;
+		}
+
+
+/*footer部分css开始*/
+		.footer {
+			clear: both;
+			width: 100%;
+			background-color: #000000;
+		}
+		.footer .inner_f {
+			width: 1240px;
+			height: 70px;
+			margin: 0 auto;	
+		}
+		.footer .inner_f p {
+			font-size: 12px;
+			color: #F7FDF9;
+		}
+/*footer部分css结束*/
+
+
+	</style>
+</head>
+<body>
+	<!-- html头部页面  -->
+	<div class="header">
+		<div class="inner_h">
+			<h1 class="logo">
+				<a href=""><img src="images/logo.jpg" alt="" /></a>
+			</h1>
+			<div class="nav">
+				<ul>
+					<li><a href="">导航链接一</a></li>
+					<li><a href="">导航链接二</a></li>
+					<li><a href="">导航链接三</a></li>
+					<li class="last"><a href="">导航链接四</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+<!-- html头部页面结束 -->
+	<div class="content">
+		<div class="inner_c">
+			<div class="inner_left">
+
+				<div class="article1">
+					<h2>文章一级标题</h2>
+					<h3>文章二级标题</h3>
+					<p><span>文章作者  文章发表时间</span></p>
+					<p class="indent1">
+						华晨宇，1990年2月7日生于湖北十堰 ，毕业于武汉音乐学院，中国内地男歌手。 <br />
+						2013年9月27日获湖南卫视《<a href="http://baike.so.com/doc/5388419-5624994.html">快乐男声</a>》年度总冠军出道。同年12月6日，获第六届<a href="http://baike.so.com/doc/597686-632711.html">音乐风云榜</a>新人盛典最受欢迎男歌手奖。
+						2014年1月30日，华晨宇登上马年央视春晚并献唱《在那遥远的地方》。3月，获第21届东方风云榜最佳新锐歌手奖。4月29日，被评为湖北音乐年度人物。2014年9月19日，首张个人专辑《卡西莫多的礼物》全球同步发行。后相继发布三支主打MV。10月，以华语音乐人代表之姿登上《L’Uomo Vogue》"THE MUSIC ISSUE“专题。2015年发布最新专辑《异类》。<br />
+						2015年3月25日，获QQ音乐巅峰榜年度最佳内地男歌手。11月13日，参与的国内首档音乐游学类真人秀《唱游天下》开播。12月15日，第二张专辑《异类》正式发行；同日，纪实真人秀《我是谁》优酷上线。2016年1月7日，出席2015新浪微博之夜，斩获年度最受欢迎男歌手及2015亚洲新歌榜冠军王两项大奖；12月2日，获2016MAMA“亚洲最佳艺人”大奖。。
+					</p>
+					<img src="images/1.jpg" alt="" width=30% height=30%/>
+					<p class="indent1">
+						2016年1月7日，出席2015新浪微博之夜，斩获年度最受欢迎男歌手及2015亚洲新歌榜冠军王两项大奖 。8月16日，为演唱会创作的全英文单曲《For forever》曝光。8月20日，加盟《挑战者联盟》收官夜。9月8日，由<a href="http://baike.so.com/doc/3682776-3870565.html">姚若龙</a>填词的情歌《消失的昨天》正式发布。9月13日，华晨宇作曲，易家扬作词的单曲《我离孤单几公里》首发。9月27日，出席亚洲新歌榜2016年度盛典，揽获最佳男歌手奖。<br />10月16日，东方卫视《<a href="http://baike.so.com/doc/24206319-24792219.html">天籁之战</a>》首播，华晨宇作为明星导师接受素人挑战，因在节目中改编的《我的滑板鞋2016》及《齐天大圣》再次受到广泛关注。11月7日，为《相爱穿梭千年2》献唱主题曲《穿心》。12月2日，获2016MAMA“亚洲最佳艺人”大奖。</p>
+				</div>
+
+				<div class="article2">
+					<h2>另一篇文章一级标题</h2>
+					<h3>文章二级标题</h3>
+					<p>文章作者  文章发表时间</p>
+					<p class="indent1">
+						2016年1月7日，出席2015新浪微博之夜，斩获年度最受欢迎男歌手及2015亚洲新歌榜冠军王两项大奖 。8月16日，为演唱会创作的全英文单曲《For forever》曝光。8月20日，加盟《挑战者联盟》收官夜。9月8日，由<a href="http://baike.so.com/doc/3682776-3870565.html">姚若龙</a>填词的情歌《消失的昨天》正式发布。9月13日，华晨宇作曲，易家扬作词的单曲《我离孤单几公里》首发。9月27日，出席亚洲新歌榜2016年度盛典，揽获最佳男歌手奖。<br />10月16日，东方卫视《<a href="http://baike.so.com/doc/24206319-24792219.html">天籁之战</a>》首播，华晨宇作为明星导师接受素人挑战，因在节目中改编的《我的滑板鞋2016》及《齐天大圣》再次受到广泛关注。11月7日，为《相爱穿梭千年2》献唱主题曲《穿心》。12月2日，获2016MAMA“亚洲最佳艺人”大奖。</p>
+					<img src="images/1.jpg" alt="" width=30% height=30%/>
+					<ul>
+						<li>列表项目一</li>
+						<li>列表项目二</li>
+						<li>列表项目三</li>
+					</ul>
+				</div>
+				
+				<div class="picture">
+					<h2>图片</h2>
+					<ul>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						 <li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<li>
+							<p>好看的图片</p> 
+							<img src="images/1.jpg" alt="" width="20%" height="20%"/>
+						</li>
+						<div class="cl"></div>
+					</ul>
+				</div>
+				
+				<div class="article3">
+					<h2>最后一篇文章一级标题</h2>
+					<h3>文章二级标题</h3>
+					<p><span>文章作者  文章发表时间</span></p>
+					
+					<ol>
+						<li>排名1</li>
+						<li>排名2</li>
+						<li>排名3</li>
+					</ol>
+
+					<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+					<table>					
+						<tr>
+							<th>表头</th>
+							<th>表头</th>
+							<th>表头</th>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr class="last">
+							<td>总计</td>
+							<td colspan="2">1000</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+				
+
+			<div class="inner_right">	
+
+				<div class="fm">
+					<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+					<form  class="fm1" >
+						<label for="emails">请输入邮箱地址</label>
+						<input type="text" id="emails" value="这是一个文本输入框" />
+						<p>邮箱地址请按要求格式输入</p>
+					</form>
+					
+					 <form class="fm2">
+					 	<label for="pw1"><span>请输入密码</span></label>
+					 	<input type="password" id="pw1" value="这是一个密码输入框" />
+					 	<br />
+					 	<label for="pw2">请重复输入密码</label>
+					 	<input type="password" id="pw2" value="这是一个密码输入框" />
+					 	<p>密码请为6-16位英文数字</p>
+					 </form>
+					 
+					 
+					 <form class="fm3">
+					 	<span>性别</span>
+					 	<input type="radio" name="sex" id="man" checked="checked" />
+					 	<label for="man">男</label>
+					 	<input type="radio" name="sex" id="woman" />
+					 	<label for="woman">女</label>
+					 	<br />
+					 	
+					 	<span>城市 </span>
+						<select >
+							<option value="北京">北京</option>
+							<option value="上海">上海</option>
+							<option value="广州">广州</option>
+						</select>
+						<br />
+
+						<span>爱好 </span>
+						<input type="checkbox" id="sports" />
+						<label for="sports">运动</label>
+						<input type="checkbox" id="art" />
+						<label for="art">艺术</label>
+						<input type="checkbox" id="science" />
+						<label for="science">科学</label>
+						<br />
+
+						<span class="last">个人描述</span>
+						<textarea  cols="30" rows="3" id="ta">这是一个多行输入框，输入您的个人描述</textarea>
+					 </form>
+					 <input class="bt" type="submit"  value="确认提交" />
+				</div>
+
+			</div>
+			
+			<div class="cl"></div>
+
+		</div>			
+	</div>
+
+
+
+<!--footer部分开始 -->
+	<div class="footer">
+		<div class="inner_f">	
+			<div >
+				<p>版权所有@</p>
+			</div>
+		</div>
+	</div>
+
+<!--footer部分结束 -->
+</body>
+</html>
