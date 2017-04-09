@@ -1,0 +1,362 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+.newspaper {
+	width: 980px;
+	height: 1386px;
+	border: 1px solid gray;
+	margin: 0 auto;
+}
+.inner {
+	width: 892px;
+	margin: 0 auto;
+}
+
+
+/* 头部代码*/
+.header {
+	height: 61px;
+	border-bottom: 2px solid #938e8c;
+	position: relative;
+	margin-bottom: 34px;		
+}
+.header .box1 {
+	width: 110px;
+	height: 61px;
+	background-color: #d45d5c;
+}
+.header p,
+.header span {
+	font: 12px "黑体";
+}
+.header p {
+	color: #ffffff;
+	position: absolute;
+	top: 46px;
+	left: 6px;
+}
+.header span {
+	color: #d45d5c;
+	position: absolute;
+	top: 46px;
+	right: 0;
+}
+/*头部代码结束*/
+
+/*中间内容开始*/
+
+/*中间第一部分*/
+.headline {
+	height: 301px;
+}
+.headline .headline_left {
+	float: left;
+	width: 641px;
+	height: 301px;
+	margin-right: 48px;
+	background-image: url(images/hl-img.jpg);	 
+}
+.headline_left .hl-img2 {
+	float: right;	
+}
+.headline .headline_right {
+	float: left;
+	width: 203px;
+	height: 299px;
+	border-top: 2px solid #cc8091;
+	position: relative;
+	
+}
+.headline_right .hr_heading1 {
+	font: 24px/35px "Microsoft Yahei";
+	color: #000000;
+	text-decoration: underline;
+	font-variant: small-caps;    /*小型大写字母文本*/
+	text-transform: capitalize;  /*关键样式*/ 
+}
+.headline_right .hr_text {
+	font: italic 12px/10px "楷体";
+	color: #676767;
+}
+.headline_right .hr_text span {
+	text-transform: capitalize;
+}
+.headline_right .hr_number {
+	font: 116px "Microsoft Yahei";
+	color: #75b86b;
+}
+.headline_right .hr_number2 { 
+	font: 55px "Microsoft Yahei";
+	color: #cc8091;	
+}
+.headline_right .hr_text2 {
+	position: absolute;
+	left: 85px;
+	bottom: 0; 
+}
+.headline_right .hr_text2 span {
+	font: 21px/21px "Microsoft Yahei";
+	color: #cc8091;
+}
+.headline_right .hr_text2 p {
+	font: 12px/12px "Microsoft Yahei";
+	color: #676767;
+}
+/*中间第二部分*/
+.news {
+	position: relative;
+	height: 172px;
+	margin-top: 41px;
+}
+.news_left, .news_main {
+	float: left;
+	margin-right: 28px;
+}
+.news_left {
+	width: 228px;
+}
+.news_left h3, .news_main h3 , .news_right h3{
+	text-decoration: underline;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+} 
+.news_left h3 {
+	font: 16px "Microsoft Yahei"; 
+	color: #418c59;
+}
+.news_left p, .news_main p {
+	text-align: justify;
+}
+.news_left p {
+	font: 12px/16px "宋体"; 	
+}
+.news_main {
+	width: 204px;
+}
+.news_main h3 {
+	font: 16px "Microsoft Yahei"; 
+	color: #d2994f;
+}
+.news_main p {
+	font: 12px/16px "Microsoft Yahei";
+	color: #231815;
+	filter: opacity(70%);
+}
+.news_right h3 {
+	font: 16px "Microsoft Yahei"; 
+	color: #cc7680;
+}
+.news_right p {
+	font: 12px "Microsoft Yahei"; 
+	 
+}
+.news_right .news_last{
+	position: absolute;
+	left: 493px;
+	bottom: 0;
+}
+.news_right .news_last span {
+	font: italic 12px/16px "Microsoft Yahei";
+	color: #cd4a48;
+	filter: opacity(70%);
+}
+
+.cl {
+	clear: both;
+}
+/*中间第三部分*/
+.article {
+	height: 608px;
+	margin-top: 67px;
+}
+.article_left {
+	float: left;
+	width: 415px;
+	margin-right: 19px;
+}
+.article_left .al_h {
+	height: 153px;
+	border-bottom: 2px solid  #11456b;
+}
+.article_left .al_h h3 {
+	font: bold 42px/16px "黑体";
+	color: #11456b;
+	text-transform: uppercase;
+ 	float: left;
+ 	margin-top: -16px;
+}
+.article_left .al_h span {
+	font: oblique 72px "黑体";
+	color: #f5e327;
+}
+.article_left .al_h h4 {
+	font: bold 33px/75px "黑体";
+	color: #11456b;
+}
+
+.article_left .al_text {
+	padding-top: 25px;
+}
+.article_left .al_text span {
+	font: 70px "Microsoft Yahei";
+	color: #f5e327;
+	float: left;
+	margin: -10px 7px 0px 0px;
+}
+.article_left .al_text p{
+	font: 12px/16px "宋体";
+	color: #767777;
+	text-indent: 2em;
+	text-align: justify;
+}
+.article_left .al_text .al_t1 {
+	text-indent: 0;
+}
+.article_left .al_text img {
+	float: right;
+	width: 167px;
+	height: 288px;
+	margin: 20px 6px 0px 22px;
+}
+.article_right {
+	float: left;
+	width: 458px;
+	height: 608px;
+	position: relative;
+}
+.article_right .ar_top {
+	width: 458px;
+	height: 257px;
+	background-image: url(images/ar_top.jpg);
+	position: relative;
+	margin-bottom: 31px;	
+}
+ .ar_top .cover{
+	width: 458px;
+	height: 61px;
+	background-image: url(images/cover.png);
+	position: absolute;
+	left: 0;
+	bottom: 0;	
+}
+.ar_top .cover .c_text {
+	height: 44px;
+	border-left: 3px solid #72b16a;
+	margin: 8px 0 8px 38px ;
+	padding-left: 12px;
+}
+.ar_top .cover .c_text h3 {
+	float: left;
+	font: 26px/44px "Microsoft Yahei";
+	color: #ffffff;
+	margin-right: 8px;
+}
+.ar_top .cover .c_text p {
+	font: italic bold 12px/60px "Microsoft Yahei";
+	color: #72b16a;
+	transform: scaleX(140%);
+	
+}
+.article_right .ar_bottom {
+	height: 318px;
+	background-color: #EEEED6;	
+}
+.ar_bottom .ar_btop {
+	height: 127px;
+	padding: 32px 21px 0px 28px;
+}
+
+.ar_bottom .ar_btop p {
+	font: 16px/20px "宋体";
+	color: #5a5b5b;
+}
+.ar_bottom .ar_btop p .trigon {
+	 width: 0;
+	 height: 0;
+	 border-left:5px solid transparent;
+	 border-right: 5px solid transparent;
+	 border-bottom: 10px solid #10456b;
+	 display: inline-block;
+	 margin-right: 8px;
+}
+.ar_bottom .ar_btop1 {
+	margin-bottom: 20px;
+}
+.ar_bottom .ar_btop span {
+	font: 12px "宋体";
+	color: #5a5b5b;
+}
+.ar_bottom .ar_bbtom {
+	height: 160px;
+	position: relative;	
+}
+.ar_bottom .ar_bbtom .ar_bleft {
+	width: 260px;
+	height: 160px;
+	background-color: #d45d5c;
+	float: left;
+	  
+}
+.ar_bleft span {
+	font: 110px "Microsoft Yahei";
+	color: #ffffff;
+	position: absolute;
+	top: 11px;
+	left: 10px;
+}
+.ar_bleft .leftext {
+	width: 168px;
+	height: 70px;
+	padding:8px 0 8px 9px;
+	border-left: 2px solid #ffffff;
+	position: absolute;
+	left: 78px;
+	top: 40px;
+}
+.ar_bleft .leftext h3 {
+	font: italic 21px/24px "黑体";
+	color: #ffffff;
+}
+.ar_bleft .leftext p {
+	font: 12px "黑体";
+	color: #ffffff;	 
+}
+.ar_bottom .ar_bright {
+	width: 163px;
+	height: 115px;
+	float: left;
+	padding: 7px 20px 38px 15px;	 
+}
+.ar_bottom .ar_bright p {
+	font:italic 14px/16px "黑体";
+	color: #5a5b5b;
+	text-align: justify;
+	margin-top: 20px;
+}
+.ar_bottom .ar_bright span {
+	font: 72px "黑体";
+	color: #d45d5c;
+}
+.ar_bottom .ar_bright .bleft {
+	float: left; 
+	margin: -18px 10px 0 -40px;
+	height: 30px; 
+}
+.ar_bottom .ar_bright .bright {
+	float: right;
+							
+}
+/*中间内容结束*/
+
+
+/*尾部代码*/
+.footer {
+	height: 57px;
+	border-top: 1px solid #938e8c;
+	margin-top: 42px;
+}
+.footer p {
+	float: right;
+	font: 12px "黑体";
+	color: #d45d5c;
+}
